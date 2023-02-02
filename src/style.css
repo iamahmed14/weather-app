@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    background-color: white;
+    color: tomato;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+input, .changeCity{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+input{
+    padding: 0 10px;
+    background-color: whitesmoke;
+}
+.hide{
+    display: none;
+}
+.changeCity:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+.weatherDiv{
+    margin: 20px auto;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    border-left: 10px solid tomato;
+}
+.temp{
+    font-size: 40px;
+}
