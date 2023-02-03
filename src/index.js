@@ -16,15 +16,19 @@ async function initialLoad() {
   }
 
   const search = initialDisplay();
+
   search.button.addEventListener("click", () => {
     toggleHide();
+    search.input.value = "";
     search.input.focus();
   });
 
   search.input.addEventListener("keypress", async (event) => {
     if (event.key === "Enter") {
+      if (search.input.value) {
+        handleWeatherRequest(search.input.value);
+      }
       toggleHide();
-      handleWeatherRequest(search.input.value);
     }
   });
   handleWeatherRequest("karachi");

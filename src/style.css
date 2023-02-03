@@ -15,8 +15,8 @@ header{
     gap: 10px;
     justify-content: space-between;
 }
-input, .changeCity{
-    height: 40px;
+input, .addCity{
+    height: 35px;
     border: none;
     border-radius: 5px;
     font-size: larger;
@@ -30,13 +30,17 @@ input{
 .hide{
     display: none;
 }
-.changeCity:hover{
+.addCity:hover{
     cursor: pointer;
     background-color: yellowgreen;
 }
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
 .weatherDiv{
-    margin: 20px auto;
-    width: 250px;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -48,4 +52,22 @@ input{
 }
 .temp{
     font-size: 40px;
+}
+.buttons{
+    text-align: right;
+}
+.remove, .toggle{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+.remove:hover, .toggle:hover{
+    cursor: pointer;
+}
+.remove:hover{
+    background-color: tomato;
+}
+.toggle:hover{
+    background-color: yellowgreen;
 }
