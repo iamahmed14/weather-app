@@ -54,22 +54,6 @@ function newWeather(data) {
   remove.addEventListener("click", () => {
     weatherDiv.remove();
   });
-
-  // const buttons = document.createElement("div");
-  // buttons.classList.add("buttons");
-
-  // const toggle = document.createElement("img");
-  // toggle.classList.add("toggle");
-  // toggle.width = "24";
-  // toggle.src = celsius;
-  // buttons.appendChild(toggle);
-
-  // const remove = document.createElement("img");
-  // remove.classList.add("remove");
-  // remove.src = removeImg;
-  // buttons.appendChild(remove);
-
-  // weatherDiv.appendChild(buttons);
 }
 
 export { initialDisplay, newWeather };

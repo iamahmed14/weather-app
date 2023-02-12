@@ -19,7 +19,6 @@ async function initialLoad() {
 
   search.button.addEventListener("click", () => {
     toggleHide();
-    search.input.value = "";
     search.input.focus();
   });
 
@@ -28,6 +27,7 @@ async function initialLoad() {
       if (search.input.value) {
         handleWeatherRequest(search.input.value);
       }
+      search.input.value = "";
       toggleHide();
     }
   });
